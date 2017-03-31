@@ -4,13 +4,14 @@ import {observer} from "mobx-react";
 
 @observer
 class PersonTable extends Component {
+
   constructor(){
     super();
   }
 
   render() {
 
-      const rows = factory.persons.map(function(person){
+      const rows = factory.getPersons.map((person) =>{
           return(
               <tr key={person._id}>
                   <td>{person.age}</td>

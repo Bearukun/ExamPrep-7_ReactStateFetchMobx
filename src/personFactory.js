@@ -1,5 +1,6 @@
 import {observable, computed, action, useStrict} from "mobx";
 
+useStrict(true)
 class PersonFactory {
 
    @observable
@@ -22,9 +23,10 @@ class PersonFactory {
                 this.persons.replace(result) }))
     }
 
-   getPersons = () => {
+    @computed
+    get getPersons() {
      return this.persons;
-   }
+    }
 }
 
 export default new PersonFactory();
