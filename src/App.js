@@ -4,11 +4,7 @@ import PersonTable from "./PersonTable";
 import './App.css';
 
 class App extends Component {
-  
-  constructor(props){
-    super(props);
 
-  }
 
   render() {
     return (

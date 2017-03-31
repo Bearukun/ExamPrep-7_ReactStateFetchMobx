@@ -5,9 +5,6 @@ import {observer} from "mobx-react";
 @observer
 class PersonTable extends Component {
 
-  constructor(){
-    super();
-  }
 
   render() {
 
@@ -21,7 +18,7 @@ class PersonTable extends Component {
                   <td>{person.friends.map(function(friend){
                         return(
 
-                            <p>{friend.id} {friend.name}</p>
+                            <p key={friend.id}>{friend.id} {friend.name}</p>
                         )
                   })}</td>
               </tr>)
