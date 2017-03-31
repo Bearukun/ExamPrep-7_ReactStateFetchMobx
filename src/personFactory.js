@@ -11,7 +11,7 @@ class PersonFactory {
 
     this.persons = [];
 
-    setInterval(this.fetchPersons.bind(this),10000);
+    setInterval(this.fetchPersons.bind(this),3000);
 
    }
 
